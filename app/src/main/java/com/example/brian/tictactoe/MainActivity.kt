@@ -8,8 +8,15 @@ import android.support.v7.widget.Toolbar
 import android.view.View
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.TableLayout
+import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
+    var gameBoard: Array<CharArray> = Array(3) { CharArray(3)} // 1
+    var turn = 'X' // 2
+    var tableLayout: TableLayout? = null // 3
+    var turnTextView: TextView? = null // 4
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
